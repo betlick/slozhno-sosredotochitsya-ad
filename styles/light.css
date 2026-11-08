@@ -41,4 +41,19 @@
     --decor-text-color: #353430;
     --title-color: #ffc2e6;
   }
+
+  :root:not(.theme-dark) .header__rec {
+    display: none;
+  }
+
+  :root:not(.theme-dark) .header__theme-menu-button,
+  :root:not(.theme-dark) .main__section-title {
+    color: var(--text-color);
+  }
+
+  :root:not(.theme-dark) .header__theme-menu-button_active,
+  :root:not(.theme-dark) .decorated-zone::before,
+  :root:not(.theme-dark) .decorated-zone::after {
+    border-color: var(--text-color);
+  }
 }
